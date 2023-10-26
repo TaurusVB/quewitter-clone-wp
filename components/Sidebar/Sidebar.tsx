@@ -1,8 +1,11 @@
 import { useMemo } from "react";
 import { BsHouseFill, BsBellFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
+import { BiLogOut } from "react-icons/bi";
+
 import SidebarLogo from "../SidebarLogo";
 import SidebarItem from "../SidebarItem";
+import SideBarTweetButton from "../SideBarTweetButton";
 
 const Sidebar = () => {
   const items = useMemo(
@@ -22,6 +25,8 @@ const Sidebar = () => {
           {items.map(({ href, label, icon }) => (
             <SidebarItem key={href} href={href} label={label} icon={icon} />
           ))}
+          <SidebarItem onClick={() => {}} icon={BiLogOut} label="Logout" />
+          <SideBarTweetButton />
         </div>
       </div>
     </div>
