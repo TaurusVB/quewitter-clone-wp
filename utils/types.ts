@@ -6,6 +6,7 @@ export interface ISidebarItemProps {
   label: string;
   icon: IconType;
   onClick?: () => void;
+  auth?: boolean;
 }
 
 export interface IHeaderProps {
