@@ -1,3 +1,4 @@
+import { ChangeEvent, ReactElement } from "react";
 import { IconType } from "react-icons/lib";
 
 export interface ISidebarItemProps {
@@ -10,4 +11,39 @@ export interface ISidebarItemProps {
 export interface IHeaderProps {
   label: string;
   showBackArrow?: boolean;
+}
+
+export interface IButtonProps {
+  label: string;
+  secondary?: boolean;
+  fullWidth?: boolean;
+  large?: boolean;
+  onClick: () => void;
+  disabled?: boolean;
+  outline?: boolean;
+}
+
+export interface IModalProps {
+  isOpen?: boolean;
+  onClose: () => void;
+  onSubmit: () => void;
+  title?: string;
+  body?: ReactElement;
+  footer?: ReactElement;
+  actionLabel: string;
+  disabled?: boolean;
+}
+
+export interface IInputProps {
+  placeholder?: string;
+  value?: string;
+  type?: string;
+  disabled: boolean;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+}
+
+export interface ILoginModalStore {
+  isOpen: boolean;
+  onOpen: () => void;
+  onClose: () => void;
 }
