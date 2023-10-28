@@ -43,8 +43,14 @@ export interface IInputProps {
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-export interface ILoginModalStore {
+export interface IHooksModalProps {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
+}
+
+export interface IAvatarProps {
+  userId: string;
+  isLarge?: boolean;
+  hasBorder?: boolean;
 }
