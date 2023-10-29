@@ -18,9 +18,10 @@ const Sidebar = () => {
       { label: "Home", href: "/", icon: BsHouseFill, auth: false },
       {
         label: "Notification",
-        href: "/notification",
+        href: "/notifications",
         icon: BsBellFill,
         auth: true,
+        alert: currentUser?.hasNotification,
       },
       {
         label: "Profile",
@@ -29,7 +30,7 @@ const Sidebar = () => {
         auth: true,
       },
     ],
-    [currentUser?.id]
+    [currentUser?.hasNotification, currentUser?.id]
   );
 
   return (
@@ -37,13 +38,14 @@ const Sidebar = () => {
       <div className="flex flex-col items-end">
         <div className="space-y-2 lg:w-[230px]">
           <SidebarLogo />
-          {items.map(({ href, label, icon, auth }) => (
+          {items.map(({ href, label, icon, auth, alert }) => (
             <SidebarItem
               key={href}
               href={href}
               label={label}
               icon={icon}
               auth={auth}
+              alert={alert}
             />
           ))}
           {currentUser && (

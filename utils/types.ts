@@ -7,6 +7,7 @@ export interface ISidebarItemProps {
   icon: IconType;
   onClick?: () => void;
   auth?: boolean;
+  alert?: boolean;
 }
 
 export interface IHeaderProps {
