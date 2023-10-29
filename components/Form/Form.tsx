@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 import Button from "../Button";
 import Avatar from "../Avatar";
 
-const Form: FC<IFormProps> = ({ placegolder, postId, isComment }) => {
+const Form: FC<IFormProps> = ({ placeholder, postId, isComment }) => {
   const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
 
@@ -59,7 +59,7 @@ const Form: FC<IFormProps> = ({ placegolder, postId, isComment }) => {
                 text-[20px]
                 placeholder-neutral-500
                 text-white"
-              placeholder={placegolder}
+              placeholder={placeholder}
             ></textarea>
             <hr
               className="

@@ -63,7 +63,7 @@ export interface IImageUploadProps {
 }
 
 export interface IFormProps {
-  placegolder: string;
+  placeholder: string;
   isComment?: boolean;
   postId?: string;
 }
