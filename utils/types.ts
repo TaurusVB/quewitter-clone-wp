@@ -54,3 +54,16 @@ export interface IAvatarProps {
   isLarge?: boolean;
   hasBorder?: boolean;
 }
+
+export interface IImageUploadProps {
+  disabled?: boolean;
+  value?: string;
+  label?: string;
+  onChange: (base64: string) => void;
+}
+
+export interface IFormProps {
+  placegolder: string;
+  isComment?: boolean;
+  postId?: string;
+}

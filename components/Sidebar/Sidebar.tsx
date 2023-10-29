@@ -22,9 +22,14 @@ const Sidebar = () => {
         icon: BsBellFill,
         auth: true,
       },
-      { label: "Profile", href: "/users/123", icon: FaUser, auth: true },
+      {
+        label: "Profile",
+        href: `/users/${currentUser?.id}`,
+        icon: FaUser,
+        auth: true,
+      },
     ],
-    []
+    [currentUser?.id]
   );
 
   return (
