@@ -1,15 +1,8 @@
-# Build and Deploy: TWITTER clone with React, Tailwind, Next, Prisma, Mongo, NextAuth & Vercel (2023)
+# Quewitter - Twitter Clone
 
-![Fullstack Twitter Clone (2)](https://user-images.githubusercontent.com/23248726/224405420-03112a76-250a-4283-992c-60e235170678.png)
+Quewitter is a custom clone of the popular Twitter platform, allowing users to create posts, share thoughts, and follow other users. Quewitter provides a familiar interface and functionality to easily start using the service.
 
-
-This is a repository for a FullStack Twitter clone tutorial using React, NextJS, TailwindCSS & Prisma.
-
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=ytkG7RT6SvU)
-
-[DOCKER VERSION by mandeepsingh10](https://github.com/mandeepsingh10/chwitter)
-
-We are going to learn funcionalities such as:
+## The application includes the following features:
 
 - Authentication system
 - Notification system
@@ -21,16 +14,23 @@ We are going to learn funcionalities such as:
 - Following functionality
 - Comments / Replies
 - Likes functionality
-- Vercel Deployment
 
-### Prerequisites
+ ## Technologies Used
 
-**Node version 14.x**
+- React
+- Tailwind CSS
+- Next.js
+- Prisma
+- MongoDB
+- NextAuth
+- Vercel
+
+## Installation and Setup
 
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/twitter-clone.git
+git clone https://github.com/TaurusVB/quewitter-clone-wp.git
 ```
 
 ### Install packages
@@ -40,7 +40,6 @@ npm i
 ```
 
 ### Setup .env file
-
 
 ```js
 DATABASE_URL=
@@ -54,10 +53,12 @@ NEXTAUTH_SECRET=
 npm run dev
 ```
 
-## Available commands
+## About the Project
 
-Running commands with npm `npm run [command]`
+This project was created with the guidance of a [YouTube video](https://www.youtube.com/watch?v=ytkG7RT6SvU&list=LL&index=1&ab_channel=CodeWithAntonio) provided by CodeWithAntonio. I am grateful to CodeWithAntonio and other educational resources that have taught me how to develop software and use various technologies.
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+I always value opportunities for learning and skill improvement, and I hope that this project will be beneficial for others who also wish to learn software development.
+
+Thank you for your support and education!
+
+
