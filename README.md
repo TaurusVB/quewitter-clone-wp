@@ -1,6 +1,11 @@
 # Quewitter - Twitter Clone
 
 Quewitter is a custom clone of the popular Twitter platform, allowing users to create posts, share thoughts, and follow other users. Quewitter provides a familiar interface and functionality to easily start using the service.
+<div align="left">
+  <img height="400" src="https://res.cloudinary.com/dvlinx4rz/image/upload/v1700134355/twitter-clon_vo0iif.png"  />
+</div>
+
+###
 
 ## The application includes the following features:
 
