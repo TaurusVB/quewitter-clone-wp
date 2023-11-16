@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import NotificationsFeed from "@/components/NotificationsFeed";
 import { NextPageContext } from "next";
 import { getSession } from "next-auth/react";
+import Head from "next/head";
 import React from "react";
 
 export async function getServerSideProps(context: NextPageContext) {
@@ -26,6 +27,11 @@ export async function getServerSideProps(context: NextPageContext) {
 const Notifications = () => {
   return (
     <>
+      <Head>
+        <title>Notifications | Quewitter</title>
+        <meta name="description" content="Quewitter, Notifications page" />
+      </Head>
+
       <Header showBackArrow label="Notifications" />
       <NotificationsFeed />
     </>

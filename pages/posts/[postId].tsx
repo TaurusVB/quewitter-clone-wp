@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import PostItem from "@/components/posts/PostItem";
 import Form from "@/components/Form";
 import CommentFeed from "@/components/posts/CommentFeed";
+import Head from "next/head";
 
 const PostView = () => {
   const router = useRouter();
@@ -24,6 +25,14 @@ const PostView = () => {
 
   return (
     <>
+      <Head>
+        <title>Tweet | Quewitter</title>
+        <meta
+          name="description"
+          content={`Quewitter, Post page, ${fetchedPost?.body} user`}
+        />
+      </Head>
+
       <Header label="Tweet" showBackArrow />
       <PostItem data={fetchedPost} />
       <Form

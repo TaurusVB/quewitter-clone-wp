@@ -8,6 +8,7 @@ import Userhero from "@/components/users/Userhero";
 
 import useUser from "@/hooks/useUser";
 import PostFeed from "@/components/posts/PostFeed";
+import Head from "next/head";
 
 const UserView = () => {
   const router = useRouter();
@@ -25,6 +26,14 @@ const UserView = () => {
 
   return (
     <>
+      <Head>
+        <title>{fetchedUser?.name} profile | Quewitter</title>
+        <meta
+          name="description"
+          content={`Quewitter, Profile page, ${fetchedUser?.email} user`}
+        />
+      </Head>
+
       <Header label={fetchedUser.name} showBackArrow />
       <Userhero userId={userId as string} />
       <UserBio userId={userId as string} />
